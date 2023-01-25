@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Web browser tab name-->
+    <title>Spotted Moo Digitizing Shop</title>
+    <!--Web browser tab image-->
+    <link rel="icon" href="./Images/logo.png">
+
+    <!--Link css-->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+    <!--Linking JQuery
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+
+    <!-- Link Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <header>
+        <div class="header">  <!--Placing the header in a class-->
+            <img src = "./Images/logo.png" alt = "logo" class = "logo">   <!--Adding the website logo-->
+            <nav>  <!--Placing the list in a nav tag to keep relevant sections together-->
+                <ul>    <!--Using unordend list items to create navigation to the pages-->
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "shop.html">Shop</a></li>
+                    <li><a href = "product-gallery.html">Product Gallery</a></li>
+                    <li><a href = "contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Background animation-->
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <!--embed a snippet of the spottedmoo website to my copy cat site-->
+    <div class="iframe-container">
+        <iframe class="iframe-content" src="https://spottedmoodigitizing.com/shop" scrolling="no" frameborder="0"></iframe>
+    </div>
+
+    <!-- Creating a class footer in 2 columns so we can finish off the page-->
+    <footer class = "footer">
+        <nav>
+            <ul>    <!--Using unordered list items to create navigation to the pages-->
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "shop.html">Shop</a></li>
+                <li><a href = "product-gallery.html">Product Gallery</a></li>
+                <li><a href = "contact-us.html">Contact Us</a></li>
+                <li><a href = "index.html"> Copyright © 2022 Spotted Moo pty ltd </a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+    <!--Button to take you back to the top-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#11014;</button>
+
+    <!--linked to javascript file-->
+    <script type="text/javascript" src="./js/main.js"></script>
+
+</body>
+</html>

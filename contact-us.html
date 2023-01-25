@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Web browser tab name-->
+    <title>Spotted Moo Digitizing Contact Us</title>
+    <!--Web browser tab image-->
+    <link rel="icon" href="./Images/logo.png">
+
+    <!--Link css-->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+    <!--Linking JQuery
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+
+    <!-- Link Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <header>
+        <div class="header">  <!--Placing the header in a class-->
+            <img src = "./Images/logo.png" alt = "logo" class = "logo">   <!--Adding the website logo-->
+            <nav>  <!--Placing the list in a nav tag to keep relevant sections together-->
+                <ul>    <!--Using unordend list items to create navigation to the pages-->
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "shop.html">Shop</a></li>
+                    <li><a href = "product-gallery.html">Product Gallery</a></li>
+                    <li><a href = "contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Background animation-->
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <!--Adding contact info-->
+    <div class=”row”>
+        <div class=contact-column> 
+            <h1>Website</h1>
+            <a href = "https://spottedmoodigitizing.com"><img src="./Images/Gallery Images/1.png" alt="Website" target="spottedmoodigitizing.com"> </a>
+        </div>
+        <div class=contact-column> <h1>Facebook</h1>
+            <a href = "https://facebook.com/spottedmoodigitizing"><img src="./Images/Gallery Images/2.png" alt="Facebook" target="spottedmoodigitizing.com"> </a>
+        </div>
+        <div class=contact-column> <h1>Instagram</h1>
+            <a href = "https://instagram.com/spottedmoodigitizing"><img src="./Images/Gallery Images/3.png" alt="Instagram" target="spottedmoodigitizing.com"> </a>
+        </div>
+        <div class=contact-column> <h1>Email</h1>
+            <a href = "mailto:daisy@spottedmoodigitizing.com"><img src="./Images/Gallery Images/4.png" alt="Email" target="spottedmoodigitizing.com"> </a>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+
+    <!--Contact Us form--> 
+    <div class="newsletter">
+        <h2>Like what you see? Subscribe to our newsletter! </h2>
+        
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="email">Email Address: </Address></label><br>
+            <input type="text" id="email" name="email" value="john@example.com">
+
+            <p>Choose what you would like to be notified for: </p>
+            <input type="radio" id="html" name="sub-options" value="Coupons and Sales">
+            <label for="html">Coupons and Sales</label><br>
+            <input type="radio" id="css" name="fav_language" value="New Releases">
+            <label for="css">New Releases</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="Store News">
+            <label for="javascript">Store News</label> <br><br>
+            <input type="submit" value="Submit">
+            <input type="submit" id="save" value="Save">
+        </form> 
+    </div>
+    <br><br><br>
+
+    <!--contact us form-->
+    <div class="contact-us">
+        <h2>Have a Question? Send us a message! </h2>
+        <form action="action_page.php">
+      
+          <input type="text" id="fname" name="firstname" placeholder="Name:"><br>
+      
+          <input type="text" id="email" name="email" placeholder="Email:"><br>
+            
+          <label for="subject"></label>
+          <textarea id="subject" name="subject" placeholder="Type your message:" style="height:120px"></textarea><br>
+            
+          <!--ask use if they want to sub to newsletter-->
+          <div class="dropdown">
+            <button onclick="myFunction()" class="subscribeBtn">Subscribe to newsletter?</button>
+            <div id="dropdownMenu" class="dropdown-content">
+                <a>Sure, Thanks</a>
+                <a>Not now.</a>
+            </div>
+            </div>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+      </div>
+
+    <!-- Creating a class footer in 2 columns so we can finish off the page-->
+    <footer class = "footer">
+        <nav>
+            <ul>    <!--Using unordered list items to create navigation to the pages-->
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "shop.html">Shop</a></li>
+                <li><a href = "product-gallery.html">Product Gallery</a></li>
+                <li><a href = "contact-us.html">Contact Us</a></li>
+                <li><a> Copyright © 2022 Spotted Moo pty ltd </a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+    <!--Button to take you back to the top-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#11014;</button>
+
+    <!--linked to javascript file-->
+    <script type="text/javascript" src="./js/main.js"></script>
+
+</body>
+</html>

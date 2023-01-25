@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Web browser tab name-->
+    <title>Spotted Moo Digitizing Home</title>
+    <!--Web browser tab image-->
+    <link rel="icon" href="./Images/logo.png">
+
+    <!--Link css-->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+    <!--linked to jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Link Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+         
+        <header>
+            <div class="header">  <!--Placing the header in a class-->
+                <img src = "./Images/logo.png" alt = "logo" class = "logo">   <!--Adding the website logo-->
+                <nav>  <!--Placing the list in a nav tag to keep relevant sections together-->
+                    <ul>    <!--Using unordend list items to create navigation to the pages-->
+                        <li><a href = "index.html">Home</a></li>
+                        <li><a href = "shop.html">Shop</a></li>
+                        <li><a href = "product-gallery.html">Product Gallery</a></li>
+                        <li><a href = "contact-us.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>      
+        
+        <!--Background animation-->
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+        <div class="banner">
+            <img id="floral-banner" src="./Images/floral-banner.png" alt="banner">
+            <!--Adding the text over the image-->
+            <p><div id="banner-text" class="banner-text">SPOTTED MOO DIGITIZING</div></p>
+            <!--jquery chaning effects-->
+            <button id="changeBtn">Click me</button>
+        </div>
+
+        
+
+        <div class="body-info">
+            <h2>What is Machine Embroidery Digitizing?</h2>
+            <p>Embroidery digitizing is the process of converting artwork into a digital file using a software that allows embroidery machines to understand the needle's path.</p>
+
+            <h2>Is this an automatic process?</h2>
+            <p>This process is not automated and in fact, great digitizing is considered an artform if done correctly.</p>
+            
+            <h2>What is Logo Digitization?</h2>
+        
+        <a href="#" id="pageContentBtn" onclick="toggler('myContent');">Read more here</a>
+        <div id="myContent" class='hiddenContent'>
+            <div>
+                <p>Embroidery machines are not able to read the same types of files as our computer can, so you need to in essence redraw the logo/image in a way that the machine can understand before they can do their job. From a digitizers perspective you take a logo in either PNG or JPG format and redraw/recreate the image in an embroidery file.</p>
+                            <h2>What formats do Embroidery Machines use?</h2>
+                            <p>Every machine embroidery file format was created by different embroidery machine companies which is why there are so many different ones. And, in some cases the file format for a specific brand of machine has evolved, like the VIP to VP3</p>
+                            <ul> 
+                                <li>.dst: embroidery file format for Tajima commercial embroidery machines</li>
+                                <li>.exp: embroidery file format for Melco commercial embroidery machines</li>
+                                <li>.jef: embroidery file format for Janome commercial embroidery machines</li>
+                                <li>.kwk: embroidery file format for Brother commercial embroidery machines</li>
+                                <li>.dsb: embroidery file format for Barudan commercial embroidery machines</li>
+                                <li>.tap: embroidery file format for Happy commercial embroidery machines</li>
+                            </ul>    
+
+                            <h2>What types of stitches are there?</h2>
+                            <p> There are 3 basic types of stitches
+                            <h3>Straight Stitches</h3>
+                            <p>These are the foundation of Embroidery. Straight lines of stitches are repeated to make a pattern. You can create thick lines by  repeating a straight stitch many times. It is important to note that straight stitches are not just for straight lines, they can be used for curved shapes too!</p>
+                            <em>Straight Stitches are most commonly used for:</em> 
+                            <ul> 
+                                <li>Shading</li>
+                                <li>Outlining</li>
+                                <li>Detail Work</li>
+                            </ul>
+                                    
+                            <h3>Satin Stitches</h3>
+                            <p>If you are looking to have text embroidered, then the satin stitch is probably the stitch type for you. The longer thread length of satin stitching gives it a shiny look that works perfectly for lettering. The maximum stitch length for satin stitches is 12.1mm.</p>
+                            <em>Satin Stitches are most commonly used for:</em> 
+                            <ul> 
+                                <li>Words and text</li>
+                                <li>Borders</li>
+                                <li>Achieving a shiny finished look</li>
+                            </ul>
+
+                            <h3>Fill Stitches</h3>
+                            <p>Also known as the tatami stitch or the ceding stitch, the fill stitch is typically used to fill in patterns, just like its name suggests. Fill stitches use alternating lines to give the embroidery a woven appearance. The maximum stitch length for fill stitches is 4mm.</p>
+                            <em>Fill Stitches are most commonly used for:</em> 
+                            <ul> 
+                                <li>Filling in larger blank space</li>
+                                <li>Creating a textured look</li>
+                                <li>Larger designs</li>
+                                <li>More durable applications</li>
+                            </ul>
+
+                            <h2>Where do you sell the designs you make?</h2>
+                            <p><em>I currently have 2 shops:</em> 
+                                <li>A <a href = "https://spottedmoodigitizing.com"> WooCommerce shop </a></li>
+                                <li>A <a href = "https://spottedmoodigitizing.etsy.com"> Etsy shop </a></li>
+                            </p>
+            </div>
+        </div> 
+    <br />
+        <!-- Creating a class footer in 2 columns so we can finish off the page-->
+        <footer class = "footer">
+            <nav>
+                <ul>    <!--Using unordered list items to create navigation to the pages-->
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "shop.html">Shop</a></li>
+                    <li><a href = "product-gallery.html">Product Gallery</a></li>
+                    <li><a href = "contact-us.html">Contact Us</a></li>
+                    <li><a> Copyright © 2022 Spotted Moo pty ltd </a></li>
+                </ul>
+            </nav>
+        </footer>
+
+        <!--Button to take you back to the top-->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#11014;</button>
+
+        <!--linked to javascript file-->
+        <script type="text/javascript" src="./js/main.js"></script>
+
+</body>
+</html>

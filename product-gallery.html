@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Web browser tab name-->
+    <title>Spotted Moo Digitizing Gallery</title>
+    <!--Web browser tab image-->
+    <link rel="icon" href="./Images/logo.png">
+
+    <!--Link css-->
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+    <!--Linking JQuery
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>-->
+
+    <!-- Link Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+    <header>
+        <div class="header">  <!--Placing the header in a class-->
+            <img src = "./Images/logo.png" alt = "logo" class = "logo">   <!--Adding the website logo-->
+            <nav>  <!--Placing the list in a nav tag to keep relevant sections together-->
+                <ul>    <!--Using unordend list items to create navigation to the pages-->
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "shop.html">Shop</a></li>
+                    <li><a href = "product-gallery.html">Product Gallery</a></li>
+                    <li><a href = "contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Background animation-->
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <div class="product-row">
+        <h2>Here are a few items that have been made from designs purchased in our store:</h2>
+        <!--Adding gallery images using a table-->
+        <table class="product-gallery">
+            <tr>
+                <td> <img src="./Images/Gallery Images/image223.png" width=”280″> </td> 
+                <td> <img src="./Images/Gallery Images/image331.png" width=”280″> </td>
+                <td> <img src="./Images/Gallery Images/image343.png" width=”280″> </td> 
+            </tr>
+            <tr>
+                <td> <img src="./Images/Gallery Images/image367.png" width=”280″> </td>
+                <td> <img src="./Images/Gallery Images/image403.png" width=”280″> </td>
+                <td> <img src="./Images/Gallery Images/image415.png" width=”280″> </td>
+            </tr>
+            <tr>
+                <td> <img src="./Images/Gallery Images/image427.png" width=”280″> </td>
+                <td> <img src="./Images/Gallery Images/image451.png" width=”280″> </td>
+                <td> <img src="./Images/Gallery Images/image475.png" width=”280″> </td>
+            </tr>
+        </table>
+    </div>
+
+    <!--like button-->
+    <i onclick="likeButton(this)" class="likeHeart" id="likeHeart">&hearts;</i>
+    <br><br>
+
+
+    <input type="text" id="comment-box" placeholder="Enter a comment">
+    <button id="post">Post</button>
+    <ul id="commentList">
+       
+    </ul>
+
+    <br><br><br><br>
+
+    <div class="product-review">
+        <h2>Hear what our customers have to say:</h2>
+        <div class="review">
+            <img src="./Images/review-image.png" alt="review-image">
+        </div>
+    <br><br><br><br>
+    </div>
+
+    <!-- Creating a class footer in 2 columns so we can finish off the page-->
+    <footer class = "footer">
+        <nav>
+            <ul>    <!--Using unordered list items to create navigation to the pages-->
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "shop.html">Shop</a></li>
+                <li><a href = "product-gallery.html">Product Gallery</a></li>
+                <li><a href = "contact-us.html">Contact Us</a></li>
+                <li><a> Copyright © 2022 Spotted Moo pty ltd </a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+    <!--Button to take you back to the top-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#11014;</button>
+
+    <!--linked to javascript file-->
+    <script type="text/javascript" src="./js/main.js"></script>
+
+</body>
+</html>
